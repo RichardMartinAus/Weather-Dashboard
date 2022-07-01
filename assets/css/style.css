@@ -1,7 +1,3 @@
-*, *::before, *::after {
-    box-sizing: border-box;
-}
-
 header {
     min-height: 200px;
     color: white;
