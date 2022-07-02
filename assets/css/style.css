@@ -1,37 +1,15 @@
-header {
-    min-height: 200px;
+.card-left {
+    border: none;
+    border-radius: 0px;
+    border-bottom: solid 1px darkgrey;
+}
+
+.card-right {
+    border-radius: 0px;
+    border: solid 1px darkgrey;
+}
+
+.card-sml {
+    background-color: darkslateblue;
     color: white;
-    text-align: center;
-    background-color: black;
-    background-image: url("../../assets/images/headerimg.jpg");
-    background-position: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
-
-header h1 {
-    font-size: 40px;
-    font-weight: 300;
-    text-shadow: 0px 3px 10px black;
-}
-
-.container {
-    display: flex;
-}
-
-.search-section {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 20%;
-    border-right: solid 1px darkgray;
-    padding: 30px;
-}
-
-.current-weather {
-    border: solid 2px black;
-    padding: 10px 30px;
-    margin: 30px;
-}
-
-
