@@ -4,11 +4,20 @@ var searchButton = document.querySelector("#search-button");
 var userHistoryButtons = document.querySelector("#history-buttons");
 
 // funtion logs user city
-function userCitySelected(event) {
+function getWeather(event) {
     event.preventDefault();
     
     var userCity = userInput.value;
     console.log(userCity);
+
+    //API uses city name to get lat and long ()
+    // http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+
+    // Use lat and long to search OneCall API
+    // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
+    // Get City Name, Date, Icon, Temp, Wind Speed, Humidity & UV index
+    // write info to html
+    // colour UV index text
 
     // function to add a button with userCity
     var button = document.createElement("button");
@@ -17,9 +26,11 @@ function userCitySelected(event) {
 
     var history = document.getElementById("history-buttons")
     history.appendChild(button);
+
+
 }
 
-searchButton.addEventListener("click", userCitySelected);
+searchButton.addEventListener("click", getWeather);
 
 
 
@@ -43,14 +54,5 @@ searchButton.addEventListener("click", userCitySelected);
 
 // Add event listener to History section, use name from button to start search function again.
 
-// function showResponse(event) {
-//     // Prevent default action
-//     event.preventDefault();
-//     console.log(event);
-//     var response = "Thank you for your submission " + nameInput.value + "! We will reach out to you at " + emailInput.value + ".";
-//     submissionResponseEl.textContent = response;
-//   }
-    
-//   // Add listener to submit element
-//   submitEl.addEventListener("click", showResponse);
+
   
