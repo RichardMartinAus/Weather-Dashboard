@@ -12,7 +12,20 @@ function getWeather(event) {
 
     //API uses city name to get lat and long ()
     // http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
-
+    fetch('http://api.openweathermap.org/geo/1.0/direct?q=' + userCity + '&limit=1&appid=71b26fc7b3232cb9e9c26358ecffa802', {
+        method: 'GET', //GET is the default.
+        credentials: 'same-origin', // include, *same-origin, omit
+        redirect: 'follow', // manual, *follow, error
+    })
+        .then(function (response) {
+            return response.json();
+        })
+        .then(function (data) {
+            console.log(data);
+        });
+    
+        // SAVE LAT AND LONG FROM OBJECT 
+        
     // Use lat and long to search OneCall API
     // https://api.openweathermap.org/data/3.0/onecall?lat={lat}&lon={lon}&exclude={part}&appid={API key}
     // Get City Name, Date, Icon, Temp, Wind Speed, Humidity & UV index
