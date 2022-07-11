@@ -13,8 +13,8 @@ The task was to create a simple weather dashboard to display current weather and
 
 The app uses fetch calls to the OpenWeather API to get the users searched cities latitude and longitude. The coordinates are then used to fetch the wearther information. That information is then displayed on the page, including: Current date, temperature, wind-speed, humidity and UV index. The UV Index will display in green if low, orange if medium or red if high.
 
-Link to the deployed applicaiton:
+Link to the deployed application: https://richardmartinaus.github.io/Weather-Dashboard/
 
-Below is a screenshot of the deployed application:
+Below is a screenshot of the deployed application: 
 
 ![Screenshot of working scheduler](assets/images/screenshot01.jpg?raw=true)
