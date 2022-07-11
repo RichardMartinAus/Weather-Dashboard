@@ -1,26 +1,37 @@
 .card-left {
-    border: none;
-    border-radius: 0px;
-    border-bottom: solid 1px darkgrey;
+  border: none;
+  border-radius: 0px;
+  border-bottom: solid 1px darkgrey;
 }
 
 .card-right {
-    border-radius: 0px;
-    border: solid 1px darkgrey;
+  border-radius: 0px;
+  border: solid 1px darkgrey;
 }
 
 .card-sml {
-    background-color: darkslateblue;
-    color: white;
+  background-color: darkslateblue;
+  color: white;
+  font-size: 80%;
+  min-width: auto !important;
 }
-
-/* #history-buttons {
-    margin: 15px;
-} */
 
 /* UV Index colours */
 
 .hide {
-    display: none;
+  display: none;
 }
 
+.uvlow {
+  background-color: green;
+  color: white;
+}
+
+.uvmed {
+  background-color: orange;
+}
+
+.uvhigh {
+  background-color: red;
+  color: white;
+}
